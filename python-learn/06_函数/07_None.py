@@ -17,3 +17,19 @@ def say_hi2():
 result = say_hi2()
 print(f"无返回值返回的函数，返回的内容是{result}")
 print(f"无返回值返回的函数，返回的内容类型是{type(result)}")
+
+# None用于if判断
+def check_age(age):
+    if age > 18:
+        return "success"
+    else:
+        return None
+
+result = check_age(18)
+if not result:
+    # 进入if表示result是None值 也就是False
+    print("未成年不可进入")
+
+
+# None用于声明无初始内容的变量
+name = None
